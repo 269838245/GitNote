@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>js array</title>
+    <meta charset = 'utf-8'>
+  </head>
+  <body>
+    <script>
+     var scores = [60, 90, 45, 39, 67, 39, 69, 
+                  79, 62, 44, 20, 38, 27, 18, 65,];
+    var arr2 = [132, 423, 544, 344, 533, 456, 190, 476,
+               296, 183, 461];
+    function findMin(arr){
+      var min = arr[0]; 
+      var item;
+      for (var i = 1; i < arr.length; i++){
+        document.write(scores[i] + "<br>");
+        if (arr[i] < min){
+          min = arr[i];
+          item = i;
+      }
+    }
+    document.write("奇数是:" + min + "偶数是" + item + "<br>");
+  }
+    findMin(scores);
+    findMin(arr2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+      function init(){
+        var a;
+        document.writeln(a);
+        document.writeln(document.getElementById("b"));
+        document.writeln(1 + "1" + 1);
+        document.writeln(1 + parseInt("1") + 1);
+        document.writeln(1 + parseFloat("1.7") + 1);
+        
+        if ( undefined ===null ) {
+          document.writeln("真");
+        } else {
+          document.writeln("假");
+        }
+      }
+      window.onload = init;
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
